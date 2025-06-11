@@ -107,7 +107,7 @@ export default function Home() {
               className="text-xl md:text-2xl mt-6 mb-8 max-w-3xl mx-auto"
               style={{ color: textColor }}
             >
-              Chris Okeke, SAN & Co. delivers tailored legal solutions with a
+              Chris Okeke, SAN & Co. delivers tailored legal solution(s) with a
               legacy of excellence and an eye on your future.
             </motion.p>
 
