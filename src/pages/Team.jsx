@@ -67,7 +67,7 @@ const teamMembers = [
     role: "Partner",
     position: "Founding Partner",
     image: "/assets/images/common/3.jpg",
-    bio: "With over 20 years of experience in corporate law, Chris founded the firm in 1999. He specializes in mergers and acquisitions and corporate governance.",
+    bio: "With over 20 years of experience in corporate law, Chris founded the firm in 1996. He specializes in mergers and acquisitions and corporate governance.",
     education: "JD, Harvard Law School",
     contact: {
       email: "chris@chrisokeke.com",

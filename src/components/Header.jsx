@@ -13,11 +13,11 @@ export default function Header() {
         <Link to="/" className="flex items-center">
           <img
             src="/assets/images/common/11.jpg"
-            alt="Chris Okeke & Co. Logo"
+            alt="Chris Okeke, SAN & Co. Logo"
             className="h-12 rounded-full border-2 border-pink-300"
           />
           <span className="ml-3 text-xl font-bold text-white">
-            Chris Okeke & Co.
+            Chris Okeke, SAN & Co.
           </span>
         </Link>
 

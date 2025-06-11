@@ -107,9 +107,8 @@ export default function Home() {
               className="text-xl md:text-2xl mt-6 mb-8 max-w-3xl mx-auto"
               style={{ color: textColor }}
             >
-              Chris Okeke & Co. (Affiliate of Shalom Law Partners) delivers
-              tailored legal solutions with a legacy of excellence and an eye
-              toward your future.
+              Chris Okeke, SAN & Co. delivers tailored legal solutions with a
+              legacy of excellence and an eye on your future.
             </motion.p>
 
             {/* CTA Button with animation */}
@@ -245,14 +244,13 @@ export default function Home() {
                 About Our Firm
               </h2>
               <p className="text-gray-700 mb-4">
-                Founded in 1999, Chris Okeke & Co. has established itself as a
-                premier law firm specializing in corporate and litigation
+                Founded in 1996, Chris Okeke, SAN & Co. has established itself
+                as a premier law firm specializing in corporate and litigation
                 matters.
               </p>
               <p className="text-gray-700 mb-6">
-                As an affiliate of Shalom Law Partners, we bring the resources
-                of a multi-lawyer firm while maintaining the personalized
-                attention of a boutique practice.
+                We bring the resources of a multi-lawyer firm while maintaining
+                the personalized attention of a boutique practice.
               </p>
               <motion.div
                 whileHover={{ scale: 1.05 }}
@@ -296,7 +294,7 @@ const servicesPreview = [
   {
     icon: "🏛️",
     title: "Litigation",
-    description: "Aggressive representation in civil and commercial disputes.",
+    description: "Legal representation in civil and commercial disputes.",
   },
   {
     icon: "🏠",

@@ -11,7 +11,7 @@ export default function About() {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl font-bold text-sky-600 mb-6 text-center"
           >
-            About Chris Okeke & Co.
+            About Chris Okeke, SAN & Co.
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -20,7 +20,7 @@ export default function About() {
             className="text-xl text-pink-600 max-w-3xl mx-auto text-center"
           >
             Delivering exceptional legal services with integrity and dedication
-            since 1999.
+            since 1996.
           </motion.p>
         </section>
 
@@ -37,16 +37,15 @@ export default function About() {
                 Our History
               </h2>
               <p className="text-gray-600 mb-4">
-                Founded in 1999 by Chris Okeke, our firm began as a small
+                Founded in 1996 by Chris Okeke, our firm began as a small
                 practice specializing in corporate law. Over the years, we've
                 grown into a respected full-service firm while maintaining our
                 commitment to personalized client service.
               </p>
               <p className="text-gray-600 mb-4">
-                In 2018, we became an affiliate of Shalom Law Partners, allowing
-                us to offer our clients access to a broader network of legal
-                expertise while retaining our boutique firm's attention to
-                detail.
+                In 1996, we became a force, allowing us to offer our clients
+                access to a broader network of legal expertise while retaining
+                our boutique firm's attention to detail.
               </p>
               <p className="text-gray-600">
                 Today, we serve clients across multiple states with a team of
@@ -104,7 +103,7 @@ export default function About() {
         <section className="bg-sky-50 p-8 rounded-lg">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-sky-600 mb-6">
-              Affiliate of Shalom Law Partners
+              {/* Affiliate of Shalom Law Partners */}
             </h2>
             <div className="flex flex-col md:flex-row items-center gap-8">
               <motion.div
@@ -126,9 +125,8 @@ export default function About() {
                 className="md:w-2/3"
               >
                 <p className="text-gray-600 mb-4">
-                  As an affiliate of Shalom Law Partners, we combine the
-                  resources and expertise of a large multi-lawyer firm with the
-                  personalized attention of a boutique practice.
+                  We combine the resources and expertise of a large multi-lawyer
+                  firm with the personalized attention of a boutique practice.
                 </p>
                 <p className="text-gray-600">
                   This unique relationship allows us to handle complex,

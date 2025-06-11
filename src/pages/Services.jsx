@@ -19,7 +19,7 @@ export default function Services() {
             transition={{ delay: 0.2 }}
             className="text-xl text-gray-600 max-w-3xl mx-auto"
           >
-            Comprehensive legal solutions tailored to your specific needs and
+            Comprehensive legal solution(s) tailored to your specific needs and
             objectives.
           </motion.p>
         </section>
@@ -93,6 +93,7 @@ const services = [
       "Mergers and acquisitions",
       "Corporate governance",
       "Regulatory compliance",
+      "Insolvency",
     ],
   },
   {

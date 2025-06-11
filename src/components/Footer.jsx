@@ -6,9 +6,9 @@ export default function Footer() {
           {/* Brand Info */}
           <div>
             <h3 className="text-2xl font-bold text-white mb-3">
-              Chris Okeke & Co.
+              Chris Okeke, SAN & Co.
             </h3>
-            <p className="text-pink-100">Affiliate of Shalom Law Partners</p>
+            {/* <p className="text-pink-100">Affiliate of Shalom Law Partners</p> */}
           </div>
 
           {/* Quick Links */}
@@ -50,7 +50,7 @@ export default function Footer() {
             <address className="text-pink-100 not-italic leading-relaxed">
               <p>27/29 King George V Rd, Marina, Lagos.</p>
               <p>Phone: 0803 201 2944</p>
-              <p>Email: info@chrisokeke.com</p>
+              <p>Email: chrisokekesan.org</p>
             </address>
           </div>
         </div>
@@ -59,8 +59,8 @@ export default function Footer() {
         <div className="border-t border-pink-200 mt-10 pt-6 text-center text-white text-sm">
           <p>
             &copy; {new Date().getFullYear()}{" "}
-            <span className="text-pink-200">Chris Okeke & Co.</span> All rights
-            reserved.
+            <span className="text-pink-200">Chris Okeke, SAN & Co.</span> All
+            rights reserved.
           </p>
         </div>
       </div>
