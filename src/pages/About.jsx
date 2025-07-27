@@ -132,7 +132,7 @@ export default function About() {
                 className="md:w-2/3"
               >
                 <p className="text-gray-600 mb-4">
-                  The Firm’s core goal is to always surpass our clients’
+                  The Firm’s core mission is to always surpass our clients’
                   expectations at all times, and ensure that every legal issue
                   is treated with utmost diligence, in keeping with the current
                   position of the law.
