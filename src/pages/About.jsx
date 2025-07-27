@@ -37,6 +37,13 @@ export default function About() {
                 Our History
               </h2>
               <p className="text-gray-600 mb-4">
+                Chris Okeke SAN & Co., is one of the Nigerian Leading Law Firms.
+                It was established in 1996 and has remained in active legal
+                practice ever since. Our experience, spanning over three decades
+                of unbroken law practice, has placed us on a higher pedestal in
+                the provision of refined and improving legal services.
+              </p>
+              <p className="text-gray-600 mb-4">
                 Founded in 1996 by Chris Okeke, our firm began as a small
                 practice specializing in corporate law. Over the years, we've
                 grown into a respected full-service firm while maintaining our
@@ -125,13 +132,40 @@ export default function About() {
                 className="md:w-2/3"
               >
                 <p className="text-gray-600 mb-4">
-                  We combine the resources and expertise of a large multi-lawyer
-                  firm with the personalized attention of a boutique practice.
+                  The Firm’s core goal is to always surpass our clients’
+                  expectations at all times, and ensure that every legal issue
+                  is treated with utmost diligence, in keeping with the current
+                  position of the law.
                 </p>
-                <p className="text-gray-600">
-                  This unique relationship allows us to handle complex,
-                  multi-jurisdictional matters while maintaining the close
-                  client relationships that define our practice.
+              </motion.div>
+            </div>
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.3 }}
+                className="md:w-1/3 flex justify-center"
+              >
+                <img
+                  src="/assets/images/common/goal.png"
+                  alt="Shalom Law Partners"
+                  className="h-24 object-contain"
+                />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.4 }}
+                className="md:w-2/3"
+              >
+                <p className="text-gray-600 mb-4">
+                  Our goal is to always surpass our clients’ expectations, while
+                  our practice areas include Court room Litigations,
+                  Arbitrations, Oil, Gas and Environmental law, Maritime Law,
+                  Commercial and Property law, Insolvency, and Intellectual
+                  Property and Corporate Law Practice. We are also Notaries
+                  Public. Our offices are located in Lagos, Abuja and Port
+                  Harcourt.
                 </p>
               </motion.div>
             </div>
@@ -147,7 +181,7 @@ const values = [
     icon: "⚖️",
     title: "Integrity",
     description:
-      "We uphold the highest ethical standards in all our dealings, ensuring our clients can trust our counsel completely.",
+      "Our Core Value Is Integrity built on competence and knowledge in an ever growing world.",
   },
   {
     icon: "🎯",

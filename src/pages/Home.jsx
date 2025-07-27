@@ -70,7 +70,7 @@ export default function Home() {
         <motion.div
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: "url('/assets/images/common/2.jpg')",
+            backgroundImage: "url('/assets/images/common/1.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             y: yBg,
@@ -244,9 +244,11 @@ export default function Home() {
                 About Our Firm
               </h2>
               <p className="text-gray-700 mb-4">
-                Founded in 1996, Chris Okeke, SAN & Co. has established itself
-                as a premier law firm specializing in corporate and litigation
-                matters.
+                Chris Okeke SAN & Co., is one of the Nigerian Leading Law Firms.
+                It was established in 1996 and has remained in active legal
+                practice ever since. Our experience, spanning over three decades
+                of unbroken law practice, has placed us on a higher pedestal in
+                the provision of refined and improving legal services.
               </p>
               <p className="text-gray-700 mb-6">
                 We bring the resources of a multi-lawyer firm while maintaining

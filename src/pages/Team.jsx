@@ -63,75 +63,96 @@ export default function Team() {
 
 const teamMembers = [
   {
-    name: "Chris Okeke",
+    name: "CHRISTOPHER EHUMADU OKEKE, SAN.",
     role: "Partner",
     position: "Founding Partner",
     image: "/assets/images/common/3.jpg",
-    bio: "With over 20 years of experience in corporate law, Chris founded the firm in 1996. He specializes in mergers and acquisitions and corporate governance.",
-    education: "JD, Harvard Law School",
+    bio: `Christopher Ehumadu Okeke, SAN., practicing law as Chris Okeke Esqr, is a Legal Practitioner, Notary Public and Economist. He is the Head and Managing Partner of Chris Okeke, SAN & Co. He is an alumni of the Rivers State University, Port Harcourt, Nigeria, where he earned a Bachelor's degree of laws in 1992. He was subsequently called to the Nigerian Bar in 1993.
+He thereafter attended ESUT (Enugu State University of Technology), Business School, Enugu, Nigeria, where he earned a Post Graduate Diploma in Economics in 2022. 
+In the past three decades, he has acquired an unbroken experience in such critical areas of the Nigerian law and practice such as Court-room Litigation in all the Appellate and Courts of record in Nigeria. He also served on Committees that reformed some important laws in Nigeria, including the Administration of Criminal Justice Act. This is in addition to being the official Biographer of the legendary late Honourable Justice Chukwudifu Akunne Oputa, CFR, D.Litt, K.t.C, SGG, Kt.CSS, KSM, a retired Justice of the Supreme Court of Nigeria of no mean repute.
+`,
+    education: "Rivers State University, Port Harcourt, Nigeria",
     contact: {
       email: "chris@chrisokeke.com",
       phone: "0803 201 2944",
     },
   },
   {
-    name: "Sarah Johnson",
+    name: "NKWOCHA CHIDI UZOMA ESQR.",
     role: "Partner",
     position: "Litigation Partner",
-    image: "/assets/images/common/4.jpg",
-    bio: "Sarah leads our litigation practice with a focus on complex commercial disputes. She has successfully argued cases before state and federal appellate courts.",
-    education: "JD, Yale Law School",
+    image: "/assets/images/team/chidi.jpg",
+    bio: `Nkwocha Chidi Uzoma Esqr., is a Legal Practitioner and the Head of Chambers of the Law Firm. He is one of the senior lawyers in the Litigation and Corporate Practice Department of the Firm. Before he joined the firm in 2006, he worked in  a reputable Law Firm - A.A. Brown & Co., in Port Harcourt, Rivers State.
+Within these periods, he has acquired vast and valuable skills and experiences in areas such as Civil Litigations, Criminal matters as well as Corporate Practices, spanning over 15 years. He has represented both individual and corporate clients in diverse areas of law vide land matters, property and tenancy matters, recovery of debts, drafting of legal documents, matrimonial causes and labour related matters. He has also rendered legal opinions on several legal issues on Nigerian Laws.
+He has an LL.B degree from Imo State University and B.L from the Nigerian Law School. He was called to the Nigerian Bar in 2002.
+`,
+    education: "B.L, Nigerian Law School",
     contact: {
-      email: "sarah@chrisokeke.com",
-      phone: "+1-555-100-1002",
+      email: "chidi@chrisokeke.com",
+      phone: "+234 805 611 1743",
     },
   },
   {
-    name: "Michael Chen",
+    name: "OKEKE GODSON CHUKWUDI LLM, B.L, LLB, DIP-IN-LAW",
     role: "Partner",
-    position: "Real Estate Partner",
+    position: "Litigation Partner",
     image: "/assets/images/common/6.jpg",
-    bio: "Michael's real estate practice encompasses transactional work and dispute resolution for both residential and commercial properties.",
-    education: "JD, Stanford Law School",
+    bio: `Godson Chukwudi Okeke, Esq. is a Legal Practitioner. He is at present, one of the Senior Associates in the Law Firm of Chris Okeke, SAN & Co. He has made a remarkable contribution in the practice of law and legal knowledge. 
+G. C. Okeke holds the following degrees, Masters-in-Law (LLM) and Bachelor of Law LLB from Lagos State University and Barrister at Law B.L from Nigerian Law School, Abuja. 
+He has served in various capacities in law such as a one-time coordinator of team of lawyers and volunteers of Free Legal Services and Human Right Advocates to indigent citizens under the umbrella of REPLACE (Public Law Enforcement Centre) in collaboration with the National Human Right Commission in conjunction with International British Human Right Enforcement Organisation and many more. 
+G. C. Okeke Esq is skilled in Advocacy, Solicitorship, Mediation, Arbitration and debt recovery. Other areas of his interest in law include litigations in areas of law such as Criminal, Civil, Property, Family, Matrimonial causes, Employment, Commercial and Maritime law. 
+G. C. Okeke Esq. has contributed remarkably in the field of law assisting the indigent citizens, vulnerable citizens and the physically challenged persons in the enforcement of their legal rights.
+`,
+    education: "B.L, Nigerian Law School",
     contact: {
-      email: "michael@chrisokeke.com",
+      email: "godson@chrisokeke.com",
       phone: "+1-555-100-1003",
     },
   },
+
   {
-    name: "David Rodriguez",
+    name: "AMARACHI UCHECHI NJOKU, ESQR.",
     role: "Associate",
-    position: "Corporate Associate",
+    position: "Litigation Partner",
     image: "/assets/images/common/5.jpg",
-    bio: "David focuses on corporate transactions and securities law, assisting clients with financing rounds and regulatory compliance.",
-    education: "JD, Columbia Law School",
+    bio: `Amarachi Uchechi Njoku, is a Legal Practitioner and a Senior Associate in the Firm.
+She holds a Bachelor of Law Degree from Madonna University, Okija, Anambra State and a Barrister-At-Law from the Nigerian Law School was called to the Nigerian Bar in 2014. She thereafter proceeded to obtain Masters in Law from the University of Lagos, Akoka, Lagos State.
+She is in the Firm’s Corporate Practice Unit and over the years, has provided Legal Advisory Services to various clients in several sectors of the economy.
+Her areas of practice cut across Corporate and Private Business Transactions, Regulatory Compliance and Corporate Governance.
+She is thorough and persistent in exceeding clients’ needs and achieving set goals and objectives
+Her Professional Associations include the Nigerian Bar Association and the Institute of Chartered Secretaries and Administrators of Nigeria.
+`,
+    education: "B.L, Nigerian Law School",
     contact: {
-      email: "david@chrisokeke.com",
-      phone: "+1-555-100-2001",
+      email: "amara@chrisokeke.com",
+      phone: "+234 803 700 5869",
     },
   },
   {
-    name: "Emily Wilson",
+    name: "VIVIAN EZINNE OKOROAFOR, ESQR (NEE EMEKAM)",
     role: "Associate",
-    position: "Litigation Associate",
-    image: "/assets/images/common/2.jpg",
-    bio: "Emily handles a variety of civil litigation matters with particular expertise in employment disputes and contract claims.",
-    education: "JD, University of Chicago Law School",
+    position: "Litigation Partner",
+    image: "/assets/images/team/amara.jpg",
+    bio: `Vivian Ezinne Okoroafor, Esqr is a dedicated and skilled legal practitioner with a robust background in Corporate Law, Property and Real Estate Management. 
+She is in the Drafting, Property and Litigation Unit of the firm as she is very proficient in legal research, contract drafting and compliance management, with a keen eye to details and a strong analytical mindset. She is also experienced in conducting comprehensive legal litigation, implementing preventive measures to safeguard businesses. 
+Over the years more so, she has acquired an excellent, communicative and negotiating skill with a proven ability to give legal advice on complex corporate matters.
+Vivian obtained her LL.B degree from Madonna University, B.L from  Nigerian Law School, Abuja  and was subsequently called to the Nigerian Bar in 2017.`,
+    education: "B.L, Nigerian Law School",
     contact: {
-      email: "emily@chrisokeke.com",
-      phone: "+1-555-100-2002",
+      email: "vivian@chrisokeke.com",
+      phone: "+234 803 700 5869",
     },
   },
-  {
-    name: "Robert Thompson",
-    role: "Of Counsel",
-    position: "Senior Counsel",
-    image: "/assets/images/common/1.jpg",
-    bio: "With 35 years of experience, Robert provides strategic counsel on complex legal matters and serves as a mentor to our junior attorneys.",
-    education: "JD, University of Virginia School of Law",
-    contact: {
-      email: "robert@chrisokeke.com",
-      phone: "+1-555-100-3001",
-    },
-  },
+  // {
+  //   name: "Robert Thompson",
+  //   role: "Of Counsel",
+  //   position: "Senior Counsel",
+  //   image: "/assets/images/common/1.jpg",
+  //   bio: "With 35 years of experience, Robert provides strategic counsel on complex legal matters and serves as a mentor to our junior attorneys.",
+  //   education: "JD, University of Virginia School of Law",
+  //   contact: {
+  //     email: "robert@chrisokeke.com",
+  //     phone: "+1-555-100-3001",
+  //   },
+  // },
 ];

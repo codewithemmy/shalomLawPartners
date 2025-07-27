@@ -10,7 +10,7 @@ export default function TeamCard({ member }) {
       <img
         src={member.image}
         alt={member.name}
-        className="w-full h-64 object-cover"
+        className="w-full h-80 object-cover object-top block"
       />
 
       {/* Member Info */}
