@@ -120,7 +120,7 @@ export default function About() {
                 className="md:w-1/3 flex justify-center"
               >
                 <img
-                  src="/assets/images/common/10.jpg"
+                  src="/assets/images/common/mission.png"
                   alt="Shalom Law Partners"
                   className="h-24 object-contain"
                 />

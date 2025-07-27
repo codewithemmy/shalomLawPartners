@@ -11,6 +11,7 @@ export default function TeamCard({ member }) {
         src={member.image}
         alt={member.name}
         className="w-full h-80 object-cover object-top block"
+        loading="lazy"
       />
 
       {/* Member Info */}
