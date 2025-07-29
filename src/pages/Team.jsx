@@ -66,7 +66,7 @@ const teamMembers = [
     name: "CHRISTOPHER EHUMADU OKEKE, SAN.",
     role: "Partner",
     position: "Founding Partner",
-    image: "/assets/images/common/3.jpg",
+    image: "/assets/images/team/barChris.jpg",
     bio: `Christopher Ehumadu Okeke, SAN., practicing law as Chris Okeke Esqr, is a Legal Practitioner, Notary Public and Economist. He is the Head and Managing Partner of Chris Okeke, SAN & Co. He is an alumni of the Rivers State University, Port Harcourt, Nigeria, where he earned a Bachelor's degree of laws in 1992. He was subsequently called to the Nigerian Bar in 1993.
 He thereafter attended ESUT (Enugu State University of Technology), Business School, Enugu, Nigeria, where he earned a Post Graduate Diploma in Economics in 2022. 
 In the past three decades, he has acquired an unbroken experience in such critical areas of the Nigerian law and practice such as Court-room Litigation in all the Appellate and Courts of record in Nigeria. He also served on Committees that reformed some important laws in Nigeria, including the Administration of Criminal Justice Act. This is in addition to being the official Biographer of the legendary late Honourable Justice Chukwudifu Akunne Oputa, CFR, D.Litt, K.t.C, SGG, Kt.CSS, KSM, a retired Justice of the Supreme Court of Nigeria of no mean repute.
