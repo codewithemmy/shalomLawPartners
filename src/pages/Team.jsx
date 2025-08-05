@@ -114,7 +114,7 @@ G. C. Okeke Esq. has contributed remarkably in the field of law assisting the in
     name: "AMARACHI UCHECHI NJOKU, ESQR.",
     role: "Associate",
     position: "Litigation Partner",
-    image: "/assets/images/common/5.jpg",
+    image: "/assets/images/team/bar-amara.jpg",
     bio: `Amarachi Uchechi Njoku, is a Legal Practitioner and a Senior Associate in the Firm.
 She holds a Bachelor of Law Degree from Madonna University, Okija, Anambra State and a Barrister-At-Law from the Nigerian Law School was called to the Nigerian Bar in 2014. She thereafter proceeded to obtain Masters in Law from the University of Lagos, Akoka, Lagos State.
 She is in the Firm’s Corporate Practice Unit and over the years, has provided Legal Advisory Services to various clients in several sectors of the economy.
