@@ -73,7 +73,7 @@ In the past three decades, he has acquired an unbroken experience in such critic
 `,
     education: "Rivers State University, Port Harcourt, Nigeria",
     contact: {
-      email: "chris@chrisokeke.com",
+      email: "chris@chrisokekesanandco.org",
       phone: "0803 201 2944",
     },
   },
@@ -88,7 +88,7 @@ He has an LL.B degree from Imo State University and B.L from the Nigerian Law Sc
 `,
     education: "B.L, Nigerian Law School",
     contact: {
-      email: "chidi@chrisokeke.com",
+      email: "chidi@chrisokekesanandco.org",
       phone: "+234 805 611 1743",
     },
   },
@@ -105,8 +105,8 @@ G. C. Okeke Esq. has contributed remarkably in the field of law assisting the in
 `,
     education: "B.L, Nigerian Law School",
     contact: {
-      email: "godson@chrisokeke.com",
-      phone: "+1-555-100-1003",
+      email: "okeke@chrisokekesanandco.org",
+      phone: "+234 803 700 5869",
     },
   },
 
@@ -124,7 +124,7 @@ Her Professional Associations include the Nigerian Bar Association and the Insti
 `,
     education: "B.L, Nigerian Law School",
     contact: {
-      email: "amara@chrisokeke.com",
+      email: "amara@chrisokekesanandco.org",
       phone: "+234 803 700 5869",
     },
   },
@@ -139,7 +139,7 @@ Over the years more so, she has acquired an excellent, communicative and negotia
 Vivian obtained her LL.B degree from Madonna University, B.L from  Nigerian Law School, Abuja  and was subsequently called to the Nigerian Bar in 2017.`,
     education: "B.L, Nigerian Law School",
     contact: {
-      email: "vivian@chrisokeke.com",
+      email: "vivian@chrisokekesanandco.org",
       phone: "+234 803 700 5869",
     },
   },
