@@ -150,7 +150,9 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-medium">Address</h3>
-                  <p className="text-gray-600">123 Law St, City, State 10001</p>
+                  <p className="text-gray-600">
+                    27/29 King George V Rd, Marina, Lagos.
+                  </p>
                 </div>
               </div>
             </div>
