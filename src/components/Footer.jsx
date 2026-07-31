@@ -9,6 +9,11 @@ export default function Footer() {
               Chris Okeke, SAN & Co.
             </h3>
             {/* <p className="text-pink-100">Affiliate of Shalom Law Partners</p> */}
+            <img
+              src="/assets/images/common/chris_okeke_logo.jpeg"
+              alt="Chris Okeke, SAN & Co. Logo"
+              className="h-20 rounded-full border-2 border-pink-1500"
+            />
           </div>
 
           {/* Quick Links */}
