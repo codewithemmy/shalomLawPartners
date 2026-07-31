@@ -16,7 +16,7 @@ export default function Header() {
             alt="Chris Okeke, SAN & Co. Logo"
             className="h-12 rounded-full border-2 border-pink-900"
           />
-          <span className="ml-3 text-xl font-bold text-white">
+          <span className="ml-3 text-xl font-bold text-white text-3d-brand">
             Chris Okeke, SAN & Co.
           </span>
         </Link>
@@ -25,14 +25,17 @@ export default function Header() {
         <nav className="hidden md:block">
           <ul className="flex space-x-6">
             <li>
-              <Link to="/" className="hover:text-pink-300 transition-colors">
+              <Link
+                to="/"
+                className="text-3d hover:text-pink-300 transition-colors"
+              >
                 Home
               </Link>
             </li>
             <li>
               <Link
                 to="/about"
-                className="hover:text-pink-300 transition-colors"
+                className="text-3d hover:text-pink-300 transition-colors"
               >
                 About
               </Link>
@@ -40,7 +43,7 @@ export default function Header() {
             <li>
               <Link
                 to="/services"
-                className="hover:text-pink-300 transition-colors"
+                className="text-3d hover:text-pink-300 transition-colors"
               >
                 Services
               </Link>
@@ -48,7 +51,7 @@ export default function Header() {
             <li>
               <Link
                 to="/team"
-                className="hover:text-pink-300 transition-colors"
+                className="text-3d hover:text-pink-300 transition-colors"
               >
                 Team
               </Link>
@@ -56,7 +59,7 @@ export default function Header() {
             <li>
               <Link
                 to="/contact"
-                className="hover:text-pink-300 transition-colors"
+                className="text-3d hover:text-pink-300 transition-colors"
               >
                 Contact
               </Link>

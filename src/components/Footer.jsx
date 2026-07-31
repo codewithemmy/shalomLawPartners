@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand Info */}
           <div>
-            <h3 className="text-2xl font-bold text-white mb-3">
+            <h3 className="text-2xl font-bold text-white mb-3 text-3d-brand">
               Chris Okeke, SAN & Co.
             </h3>
             {/* <p className="text-pink-100">Affiliate of Shalom Law Partners</p> */}
@@ -18,7 +18,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-xl font-semibold text-white mb-3">
+            <h4 className="text-xl font-semibold text-white mb-3 text-3d-brand">
               Quick Links
             </h4>
             <ul className="space-y-2">
@@ -51,7 +51,9 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-xl font-semibold text-white mb-3">Contact</h4>
+            <h4 className="text-xl font-semibold text-white mb-3 text-3d">
+              Contact
+            </h4>
             <address className="text-pink-100 not-italic leading-relaxed">
               <p>27/29 King George V Rd, Marina, Lagos.</p>
               <p>Phone: 0803 201 2944</p>

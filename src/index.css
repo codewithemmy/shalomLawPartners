@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+.text-3d {
+  text-shadow:
+    1px 1px 0 rgba(0, 0, 0, 0.25),
+    2px 2px 0 rgba(0, 0, 0, 0.2),
+    3px 3px 0 rgba(0, 0, 0, 0.15),
+    4px 4px 6px rgba(0, 0, 0, 0.2);
+} /* Stronger 3D effect for the brand name */
+.text-3d-brand {
+  text-shadow:
+    1px 1px 0 rgba(0, 0, 0, 0.3),
+    2px 2px 0 rgba(0, 0, 0, 0.25),
+    3px 3px 0 rgba(0, 0, 0, 0.2),
+    4px 4px 0 rgba(0, 0, 0, 0.15),
+    5px 5px 8px rgba(0, 0, 0, 0.25);
+}
