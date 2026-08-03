@@ -1,15 +1,17 @@
 import { useState } from "react";
-import emailjs from "@emailjs/browser";
 
 export default function Contact() {
+  const endpoint = "https://backend.api.chrisokeke.com/api/form";
+
   const [formData, setFormData] = useState({
-    name: "",
+    fullname: "",
     email: "",
     subject: "",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
+  const [submitMessage, setSubmitMessage] = useState("");
   const [formErrors, setFormErrors] = useState({});
 
   const handleChange = (e) => {
@@ -19,7 +21,7 @@ export default function Contact() {
 
   const validateForm = () => {
     const errors = {};
-    if (!formData.name) errors.name = "Name is required";
+    if (!formData.fullname) errors.fullname = "Name is required";
     if (!formData.email) errors.email = "Email is required";
     if (!formData.subject) errors.subject = "Subject is required";
     if (!formData.message) errors.message = "Message is required";
@@ -31,37 +33,64 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsSubmitting(true);
     setSubmitStatus(null);
+    setSubmitMessage("");
     setFormErrors({});
 
     const errors = validateForm();
 
     if (Object.keys(errors).length > 0) {
       setFormErrors(errors);
-      setIsSubmitting(false);
+      setSubmitStatus("error");
+      setSubmitMessage("Please fill in all required fields correctly.");
       return;
     }
 
+    const payload = {
+      fullname: formData.fullname,
+      email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+    };
+
+    console.log("Contact form payload being sent:", payload);
+
+    setIsSubmitting(true);
+    setSubmitStatus("success");
+    setSubmitMessage("Thank you! Your message has been received.");
+
     try {
-      // Replace these with your actual EmailJS service credentials
-      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-      const userId = import.meta.env.VITE_EMAILJS_USER_ID;
+      const response = await fetch(endpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
 
-      if (!serviceId || !templateId || !userId) {
-        throw new Error("EmailJS credentials are not configured");
+      const responseText = await response.text();
+      console.log("Contact form submission response:", {
+        status: response.status,
+        body: responseText,
+      });
+
+      if (!response.ok) {
+        console.error("Contact form submission failed:", {
+          status: response.status,
+          body: responseText,
+        });
+      } else {
+        console.log("Contact form submission succeeded:", {
+          status: response.status,
+          body: responseText,
+        });
       }
-
-      await emailjs.send(serviceId, templateId, formData, userId);
-
-      setSubmitStatus("success");
-      setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
-      console.error("Failed to send message:", error);
-      setSubmitStatus("error");
+      console.error("Contact form submission request error:", error);
     } finally {
       setIsSubmitting(false);
+      setFormData({ fullname: "", email: "", subject: "", message: "" });
     }
   };
 
@@ -122,7 +151,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-medium">Email</h3>
-                  <p className="text-gray-600">chrisokekesan.org</p>
+                  <p className="text-gray-600">chris@chrisokekesanandco.org</p>
                 </div>
               </div>
 
@@ -164,37 +193,36 @@ export default function Contact() {
               className="bg-white p-6 rounded-lg shadow-md"
             >
               {/* Success/Error Message */}
-              {submitStatus === "success" && (
+              {submitStatus === "success" && submitMessage && (
                 <div className="mb-6 p-4 bg-green-100 text-green-700 rounded">
-                  Thank you for your message! We'll get back to you soon.
+                  {submitMessage}
                 </div>
               )}
-              {submitStatus === "error" && (
+              {submitStatus === "error" && submitMessage && (
                 <div className="mb-6 p-4 bg-red-100 text-red-700 rounded">
-                  There was an error sending your message. Please try again
-                  later.
+                  {submitMessage}
                 </div>
               )}
 
               {/* Form Fields */}
               <div className="mb-4">
                 <label
-                  htmlFor="name"
+                  htmlFor="fullname"
                   className="block text-gray-700 font-medium mb-2"
                 >
                   Full Name *
                 </label>
                 <input
                   type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
+                  id="fullname"
+                  name="fullname"
+                  value={formData.fullname}
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-blue"
                 />
-                {formErrors.name && (
-                  <p className="text-red-600 text-sm">{formErrors.name}</p>
+                {formErrors.fullname && (
+                  <p className="text-red-600 text-sm">{formErrors.fullname}</p>
                 )}
               </div>
 
@@ -264,7 +292,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-navy-blue text-white py-3 px-4 rounded-lg font-medium hover:bg-blue-900 transition disabled:opacity-50"
+                className="w-full bg-gray-500 text-white py-3 px-4 rounded-lg font-medium hover:bg-gray-700 transition disabled:opacity-50"
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
               </button>

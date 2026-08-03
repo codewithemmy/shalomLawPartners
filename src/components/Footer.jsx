@@ -57,7 +57,7 @@ export default function Footer() {
             <address className="text-pink-100 not-italic leading-relaxed">
               <p>27/29 King George V Rd, Marina, Lagos.</p>
               <p>Phone: 0803 201 2944</p>
-              <p>Email: chrisokekesan.org</p>
+              <p>Email: chris@chrisokekesanandco.org</p>
             </address>
           </div>
         </div>
