@@ -1,75 +1,52 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   return (
-    <footer className="bg-sky-500 text-white py-10">
-      <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Brand Info */}
-          <div>
-            <h3 className="text-2xl font-bold text-white mb-3 text-3d-brand">
-              Chris Okeke, SAN & Co.
-            </h3>
-            {/* <p className="text-pink-100">Affiliate of Shalom Law Partners</p> */}
-            <img
-              src="/assets/images/common/chris_okeke_logo.jpeg"
-              alt="Chris Okeke, SAN & Co. Logo"
-              className="h-20 rounded-full border-2 border-pink-1500"
-            />
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h4 className="text-xl font-semibold text-white mb-3 text-3d-brand">
-              Quick Links
-            </h4>
-            <ul className="space-y-2">
-              <li>
-                <a
-                  href="/about"
-                  className="text-white hover:text-pink-300 transition-colors"
-                >
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/services"
-                  className="text-white hover:text-pink-300 transition-colors"
-                >
-                  Services
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/team"
-                  className="text-white hover:text-pink-300 transition-colors"
-                >
-                  Our Team
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h4 className="text-xl font-semibold text-white mb-3 text-3d">
-              Contact
-            </h4>
-            <address className="text-pink-100 not-italic leading-relaxed">
-              <p>27/29 King George V Rd, Marina, Lagos.</p>
-              <p>Phone: 0803 201 2944</p>
-              <p>Email: chris@chrisokekesanandco.org</p>
-            </address>
-          </div>
-        </div>
-
-        {/* Footer Bottom */}
-        <div className="border-t border-pink-200 mt-10 pt-6 text-center text-white text-sm">
-          <p>
-            &copy; {new Date().getFullYear()}{" "}
-            <span className="text-pink-200">Chris Okeke, SAN & Co.</span> All
-            rights reserved.
+    <footer className="site-footer">
+      <div className="footer-inner">
+        <div className="footer-brand-column">
+          <Link to="/" className="footer-brand">
+            <img src="/assets/images/common/chris_okeke_logo.jpeg" alt="" />
+            Chris Okeke, SAN &amp; Co.
+          </Link>
+          <p className="footer-tagline">
+            Thoughtful counsel and resolute advocacy, grounded in decades of
+            practice.
           </p>
         </div>
+        <div className="footer-column">
+          <h2>Explore</h2>
+          <ul>
+            <li>
+              <Link to="/about">About the firm</Link>
+            </li>
+            <li>
+              <Link to="/services">Practice areas</Link>
+            </li>
+            <li>
+              <Link to="/team">Our team</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+          </ul>
+        </div>
+        <div className="footer-column">
+          <h2>Visit or call</h2>
+          <address>
+            27/29 King George V Rd, Marina, Lagos.
+            <p>
+              <a href="tel:+2348032012944">0803 201 2944</a>
+            </p>
+            <a href="mailto:chris@chrisokekesanandco.org">
+              chris@chrisokekesanandco.org
+            </a>
+          </address>
+        </div>
+      </div>
+      <div className="footer-bottom">
+        &copy; {new Date().getFullYear()} Chris Okeke, SAN &amp; Co. All rights
+        reserved.
       </div>
     </footer>
   );
