@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function Contact() {
-  const endpoint = "https://backend.api.chrisokeke.com/api/form";
+  const endpoint = "https://backend.chrisokekesanandco.org/api/v1/contact";
 
   const [formData, setFormData] = useState({
     fullname: "",
