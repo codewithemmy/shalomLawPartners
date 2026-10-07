@@ -6,6 +6,7 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     fullname: "",
     email: "",
+    phone: "",
     subject: "",
     message: "",
   });
@@ -49,6 +50,7 @@ export default function Contact() {
     const payload = {
       fullname: formData.fullname,
       email: formData.email,
+      phone: formData.phone,
       subject: formData.subject,
       message: formData.message,
     };
@@ -71,7 +73,13 @@ export default function Contact() {
 
       setSubmitStatus("success");
       setSubmitMessage("Thank you. Your message has been received.");
-      setFormData({ fullname: "", email: "", subject: "", message: "" });
+      setFormData({
+        fullname: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: "",
+      });
     } catch {
       setSubmitStatus("error");
       setSubmitMessage(
@@ -252,6 +260,24 @@ export default function Contact() {
               {formErrors.subject && (
                 <p className="text-red-600 text-sm">{formErrors.subject}</p>
               )}
+            </div>
+
+            <div className="mb-4">
+              <label
+                htmlFor="phone"
+                className="block text-gray-700 font-medium mb-2"
+              >
+                Phone Number *
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-blue"
+              />
             </div>
 
             <div className="mb-6">
