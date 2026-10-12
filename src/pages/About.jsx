@@ -2,14 +2,14 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <div className="min-h-screen py-12 bg-white">
+    <div className="brand-page min-h-screen py-12">
       <div className="container mx-auto px-4">
         {/* Hero Section */}
         <section className="mb-16">
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl font-bold text-sky-600 mb-6 text-center"
+            className="text-4xl font-bold brand-accent mb-6 text-center"
           >
             About Chris Okeke, SAN & Co.
           </motion.h1>
@@ -17,7 +17,7 @@ export default function About() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="text-xl text-pink-600 max-w-3xl mx-auto text-center"
+            className="text-xl text-gray-600 max-w-3xl mx-auto text-center"
           >
             Delivering exceptional legal services with integrity and dedication
             since 1996.
@@ -33,7 +33,7 @@ export default function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl font-bold text-sky-600 mb-6">
+              <h2 className="text-3xl font-bold brand-accent mb-6">
                 Our History
               </h2>
               <p className="text-gray-600 mb-4">
@@ -94,10 +94,10 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-pink-50 p-6 rounded-lg shadow-md hover:shadow-lg transition"
+                className="bg-sky-50 p-6 rounded-lg shadow-md hover:shadow-lg transition"
               >
-                <div className="text-sky-600 text-3xl mb-4">{value.icon}</div>
-                <h3 className="text-xl font-semibold mb-3 text-sky-700">
+                <div className="brand-accent text-3xl mb-4">{value.icon}</div>
+                <h3 className="text-xl font-semibold mb-3 brand-accent">
                   {value.title}
                 </h3>
                 <p className="text-gray-600">{value.description}</p>
@@ -109,7 +109,7 @@ export default function About() {
         {/* Affiliate Section */}
         <section className="bg-sky-50 p-8 rounded-lg">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-sky-600 mb-6">
+            <h2 className="text-2xl font-bold brand-accent mb-6">
               {/* Affiliate of Shalom Law Partners */}
             </h2>
             <div className="flex flex-col md:flex-row items-center gap-8">

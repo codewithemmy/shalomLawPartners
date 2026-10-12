@@ -2,11 +2,11 @@ import TeamCard from "../components/TeamCard";
 
 export default function Team() {
   return (
-    <div className="min-h-screen py-12 bg-white text-gray-800">
+    <div className="brand-page min-h-screen py-12">
       <div className="container mx-auto px-4">
         {/* Hero Section */}
         <section className="mb-16 text-center">
-          <h1 className="text-4xl font-bold text-sky-500 mb-6">
+          <h1 className="text-4xl font-bold brand-accent mb-6">
             Our Legal Team
           </h1>
           <p className="text-xl text-gray-500 max-w-3xl mx-auto">
@@ -17,7 +17,7 @@ export default function Team() {
 
         {/* Partners Section */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-sky-500 mb-8 border-b pb-2 border-sky-400">
+          <h2 className="text-2xl font-bold brand-accent mb-8 border-b pb-2 border-sky-400">
             Partners
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -31,7 +31,7 @@ export default function Team() {
 
         {/* Associates Section */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-sky-500 mb-8 border-b pb-2 border-sky-400">
+          <h2 className="text-2xl font-bold brand-accent mb-8 border-b pb-2 border-sky-400">
             Associates
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -45,7 +45,7 @@ export default function Team() {
 
         {/* Of Counsel Section */}
         <section>
-          <h2 className="text-2xl font-bold text-sky-500 mb-8 border-b pb-2 border-sky-400">
+          <h2 className="text-2xl font-bold brand-accent mb-8 border-b pb-2 border-sky-400">
             Of Counsel
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

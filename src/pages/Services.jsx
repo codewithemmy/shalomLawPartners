@@ -1,15 +1,16 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function Services() {
   return (
-    <div className="min-h-screen py-12 bg-white text-black">
+    <div className="brand-page min-h-screen py-12">
       <div className="container mx-auto px-4">
         {/* Hero Section */}
         <section className="mb-16 text-center">
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl font-bold text-sky-400 mb-6"
+            className="text-4xl font-bold brand-accent mb-6"
           >
             Our Legal Services
           </motion.h1>
@@ -43,14 +44,14 @@ export default function Services() {
                 />
               </div>
               <div className="md:w-2/3">
-                <h2 className="text-3xl font-bold text-sky-400 mb-4">
+                <h2 className="text-3xl font-bold brand-accent mb-4">
                   {service.title}
                 </h2>
                 <p className="text-gray-700 mb-4">{service.description}</p>
                 <ul className="space-y-2 mb-4">
                   {service.details.map((detail, i) => (
                     <li key={i} className="flex items-start">
-                      <span className="text-sky-400 mr-2">✓</span>
+                      <span className="brand-accent mr-2">✓</span>
                       <span className="text-gray-600">{detail}</span>
                     </li>
                   ))}
@@ -61,7 +62,7 @@ export default function Services() {
         </section>
 
         {/* CTA Section */}
-        <section className="bg-pink-400 text-white rounded-lg p-8 md:p-12 text-center">
+        <section className="brand-callout rounded-lg p-8 md:p-12 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-6">
             Ready to discuss your legal needs?
           </h2>
@@ -69,12 +70,12 @@ export default function Services() {
             Contact us today to schedule a consultation with one of our
             experienced attorneys.
           </p>
-          <a
-            href="/contact"
-            className="bg-white text-sky-400 px-8 py-3 rounded-lg font-semibold hover:bg-pink-300 transition inline-block"
+          <Link
+            to="/contact"
+            className="brand-callout-link px-8 py-3 rounded-lg font-semibold transition inline-block"
           >
             Get in Touch
-          </a>
+          </Link>
         </section>
       </div>
     </div>

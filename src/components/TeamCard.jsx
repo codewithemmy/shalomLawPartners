@@ -4,7 +4,7 @@ export default function TeamCard({ member }) {
   return (
     <motion.div
       whileHover={{ y: -5 }}
-      className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 border border-pink-100"
+      className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 border border-sky-100"
     >
       {/* Member Image */}
       <img
@@ -17,22 +17,22 @@ export default function TeamCard({ member }) {
       {/* Member Info */}
       <div className="p-6">
         <div className="flex justify-between items-start mb-3">
-          <h3 className="text-xl font-bold text-sky-600">{member.name}</h3>
-          <span className="bg-pink-400 text-white text-xs px-2 py-1 rounded shadow-sm">
+          <h3 className="text-xl font-bold brand-accent">{member.name}</h3>
+          <span className="brand-role text-xs px-2 py-1 rounded shadow-sm">
             {member.role}
           </span>
         </div>
 
-        <p className="text-pink-500 font-medium mb-2">{member.position}</p>
+        <p className="text-gray-600 font-medium mb-2">{member.position}</p>
         <p className="text-gray-700 mb-3">{member.bio}</p>
-        <p className="text-sm text-sky-500 mb-4">{member.education}</p>
+        <p className="text-sm brand-accent mb-4">{member.education}</p>
 
         <div className="border-t border-sky-100 pt-4">
-          <h4 className="text-sm font-semibold text-pink-600 mb-2">Contact:</h4>
+          <h4 className="text-sm font-semibold text-gray-700 mb-2">Contact:</h4>
           <ul className="text-sm text-gray-600 space-y-1">
             <li className="flex items-center">
               <svg
-                className="w-4 h-4 mr-2 text-sky-500"
+                className="w-4 h-4 mr-2 brand-accent"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -48,7 +48,7 @@ export default function TeamCard({ member }) {
             </li>
             <li className="flex items-center">
               <svg
-                className="w-4 h-4 mr-2 text-sky-500"
+                className="w-4 h-4 mr-2 brand-accent"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

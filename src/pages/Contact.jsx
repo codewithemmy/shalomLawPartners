@@ -107,9 +107,9 @@ export default function Contact() {
           </p>
 
           {/* Contact Info */}
-          <ul className="contact-details-list">
+          <div className="contact-details-list">
             <div className="flex items-start">
-              <div className="text-navy-blue mr-4 mt-1">
+              <div className="brand-accent mr-4 mt-1">
                 <svg
                   className="w-6 h-6"
                   fill="none"
@@ -131,7 +131,7 @@ export default function Contact() {
             </div>
 
             <div className="flex items-start">
-              <div className="text-navy-blue mr-4 mt-1">
+              <div className="brand-accent mr-4 mt-1">
                 <svg
                   className="w-6 h-6"
                   fill="none"
@@ -155,7 +155,7 @@ export default function Contact() {
             </div>
 
             <div className="flex items-start">
-              <div className="text-navy-blue mr-4 mt-1">
+              <div className="brand-accent mr-4 mt-1">
                 <svg
                   className="w-6 h-6"
                   fill="none"
@@ -181,7 +181,7 @@ export default function Contact() {
                 <span>27/29 King George V Rd, Marina, Lagos.</span>
               </div>
             </div>
-          </ul>
+          </div>
         </div>
 
         <div>
@@ -213,7 +213,6 @@ export default function Contact() {
                 value={formData.fullname}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-blue"
               />
               {formErrors.fullname && (
                 <p className="text-red-600 text-sm">{formErrors.fullname}</p>
@@ -234,7 +233,6 @@ export default function Contact() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-blue"
               />
               {formErrors.email && (
                 <p className="text-red-600 text-sm">{formErrors.email}</p>
@@ -255,7 +253,6 @@ export default function Contact() {
                 value={formData.subject}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-blue"
               />
               {formErrors.subject && (
                 <p className="text-red-600 text-sm">{formErrors.subject}</p>
@@ -276,7 +273,6 @@ export default function Contact() {
                 value={formData.phone}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-blue"
               />
             </div>
 
@@ -294,18 +290,13 @@ export default function Contact() {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-blue"
               ></textarea>
               {formErrors.message && (
                 <p className="text-red-600 text-sm">{formErrors.message}</p>
               )}
             </div>
 
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              className="w-full bg-gray-500 text-white py-3 px-4 rounded-lg font-medium hover:bg-gray-700 transition disabled:opacity-50"
-            >
+            <button type="submit" disabled={isSubmitting}>
               {isSubmitting ? "Sending..." : "Send Message"}
             </button>
           </form>
